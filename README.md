@@ -1,6 +1,7 @@
 # Algorithm Practice
 
 For friendly navigation [https://badalsarkar.github.io/Algorithm-Practice/](https://badalsarkar.github.io/Algorithm-Practice/).
+
 This repository contains solutions for different programming problems. My goal is to sharpen my
 problem solving skill by solving algorithmic problems.
 
