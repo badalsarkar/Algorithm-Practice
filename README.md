@@ -1,5 +1,6 @@
 # Algorithm Practice
 
+For friendly navigation [https://badalsarkar.github.io/Algorithm-Practice/](https://badalsarkar.github.io/Algorithm-Practice/).
 This repository contains solutions for different programming problems. My goal is to sharpen my
 problem solving skill by solving algorithmic problems.
 
@@ -18,5 +19,6 @@ solving. You can also look at the solutions and the Big(O) analysis.
 I have used many resources for my learning.
 
 1. [Cracking the Coding Interview](https://www.amazon.ca/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=sr_1_1?crid=1P3EWR6G19SWE&dchild=1&keywords=cracking+the+coding+interview&qid=1597764657&sprefix=cracking+the+%2Caps%2C143&sr=8-1)
+2. [Big-O from Stanford](https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1176/handouts/midterm/5-BigO.pdf)
 
 
