@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 
-		<title>write</title>
+		<title>Factorial</title>
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -36,22 +36,23 @@
 
 
 
+		<!-- Write here -->
 		<div class="jumbotron container mt-3">
 
 
 
 
 
-			<!-- question heading -->
-			<h3 class="mb-4">write</h3>
+			<!-- QUESTION HEADING -->
+			<h3 class="mb-4">Factorial</h3>
 
 
 
 
 
 
-			<!-- question description -->
-			<p class="lead">write </p>
+			<!-- Question description -->
+			<p class="lead">Find the factorial of a number</p>
 			<hr class="my-4" />
 			<span></span>
 
@@ -82,7 +83,7 @@
 				</a>
 				<a
 					class="btn btn-primary"
-					href="https://github.com/badalsarkar/Algorithm-Practice/tree/master/code/triangularNumber/{{write}}"
+					href="https://github.com/badalsarkar/Algorithm-Practice/tree/master/code/factorial"
 					role="button"
 					target="_blank"
 					>View Code</a>
@@ -94,14 +95,26 @@
 
 			<!-- Hints -->
 			<div class="collapse" id="hints">
-				<div class="card card-body">write</div>
+				<div class="card card-body">Factorial of number 5 is 5*4*3*2*1. Factorial of number 0 is 1.</div>
 			</div>
 
 
 			<!-- Explanation -->
 			<div class="collapse" id="explanation">
 				<div class="card card-body">
-					write
+					<span>To find the factorial of a number we need to multiply it by previous number's
+						factorial.</span>
+					<br>
+					<span>So, factorial of number 5 can be found by following steps-</span>
+					<br>
+					<span>factorial of 1 = 1</span>
+					<span>factorial of 2 = 2* factorial of 1 = 2*1 = 2</span>
+					<span>factorial of 3 = 3* factorial of 2 = 3*2 = 6</span>
+					<span>factorial of 4 = 4* factorial of 3 = 4*6 = 24</span>
+					<span>factorial of 5 = 5* factorial of 4 = 5*24 = 120 </span>
+					<br>
+					<h5>How to solve this problem?  </h5>
+					We can use recursion to solve this problem very easily.
 				</div>
 			</div>
 	</div>
