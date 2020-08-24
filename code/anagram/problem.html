@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+
+		<title>Anagram</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<!-- Nav -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="../../index.html">Home</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</nav>
+
+
+
+
+
+
+
+
+		<div class="jumbotron container mt-3">
+
+
+
+
+
+			<!-- question heading -->
+			<h3 class="mb-4">Anagram</h3>
+
+
+
+
+
+
+			<!-- question description -->
+			<div class="lead">
+				<p>You are given a word. Generate all the anagrams of that word.</p>
+				<p>Anagrams of a word means all possible <a
+					href="https://www.mathsisfun.com/combinatorics/combinations-permutations.html"
+								title="https://www.mathsisfun.com/combinatorics/combinations-permutations.html">permutations</a> of that word.</p>
+				<p>Example:</p>
+				<span>The word "ANT" has following anagrams-</span>
+				<ul>
+					<li>ANT</li>
+					<li>ATN</li>
+					<li>NTA</li>
+					<li>NAT</li>
+					<li>TAN</li>
+					<li>TNA</li>
+				</ul>
+				<span>There are total 6 anagrams for the word "ANT".</span>
+			</div>
+			<hr class="my-4" />
+			<span></span>
+
+
+
+
+			<!-- Action Buttons -->
+			<p>
+				<a
+					class="btn btn-primary"
+					data-toggle="collapse"
+					href="#hints"
+					role="button"
+					aria-expanded="false"
+					aria-controls="hints"
+				>
+					Hint
+				</a>
+				<a
+						class="btn btn-primary"
+						data-toggle="collapse"
+						href="#explanation"
+						role="button"
+						aria-expanded="false"
+						aria-controls="explanation"
+					>
+						View Explanation
+				</a>
+				<a
+					class="btn btn-primary"
+					href="https://github.com/badalsarkar/Algorithm-Practice/tree/master/code/anagram"
+					role="button"
+					target="_blank"
+					>View Code</a>
+			</p>
+
+
+
+
+			<!-- Hints -->
+			<div class="collapse" id="hints">
+				<div class="card card-body">
+					<p>Loop through the word, take one letter and rearrange other letters.</p>
+					<p>For the word "ANT", it will be like below - </p>
+					<code>i=0, letter=A, rearrange "NT"</code>
+					<code>i=0, letter=A, rearrange "TN"</code>
+					<code>i=1, letter=N, rearrange "AT"</code>
+					<code>i=1, letter=N, rearrange "TA"</code>
+					<code>i=2, letter=T, rearrange "AN"</code>
+					<code>i=2, letter=T, rearrange "NA"</code>
+				</div>
+			</div>
+
+
+			<!-- Explanation -->
+			<div class="collapse" id="explanation">
+				<div class="card card-body">
+					<p>Lets simplify the problem. The anagram of 1 letter is the letter only.</p>
+					<code>Anagram of "A" = "A"</code>
+					<p>For two letter word, we loop through the word. Each time we separate one letter and 
+							anagram the rest of the letters.</p>
+					<figure class="figure">
+						<img src="./images/anagram1.png" class="figure-img img-fluid rounded mx-auto d-block" alt="...">
+						<figcaption class="figure-caption text-center">Image: Anagram of two letter word</figcaption>
+					</figure>
+				
+					<p>For three letter word, it will be like below-</p>
+					<figure class="figure">
+						<img src="./images/anagram2.png" class="figure-img img-fluid rounded mx-auto d-block" alt="...">
+						<figcaption class="figure-caption text-center">Image: Anagram of three letter word</figcaption>
+					</figure>
+
+					<br>
+					<h5>How to solve this problem?  </h5>
+					<span>We can solve this problem using recursive function.</span>
+					
+					<br><br>
+
+					
+					<h5>big-O Analysis</h5>
+					<span>It takes O({{write}}) time</span>
+					<br>
+					
+				</div>
+			</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
